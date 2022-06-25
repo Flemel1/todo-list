@@ -1,0 +1,95 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.app {
+  margin-top: 100px;
+  margin-right: 250px;
+  margin-left: 250px;
+}
+
+.app > p {
+  margin-top: 1rem;
+  font-size: 20px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+}
+
+button[type='button'] {
+  padding: 0.8rem;
+  background-color: green;
+  color: white;
+  border-radius: 1rem;
+  border: none;
+}
+
+.card {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid grey;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.card > h2 {
+  margin-bottom: 1rem;
+}
+
+.card > button[type='button'] {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: transparent;
+  border: 1px solid blue;
+  border-radius: 1rem;
+  color: black;
+}
+
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  top: 50%;
+  left: 50%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+  transform: translate(-50%, -50%);
+}
+
+.modal > .wrapper {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  height: 300px;
+  z-index: 10;
+  background-color: white;
+  border-radius: 1rem;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.04);
+}
+
+.content {
+  width: 100%;
+}
+
+.content > .modal-input-title, .content > .modal-input-subtitle {
+  width: 80%;
+  margin: 1rem 2rem;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.modal-button {
+  margin: 2rem;
+}
+
+.wrapper > .modal-button-cancel {
+  margin: 2rem;
+  background-color: transparent;
+  border: 1px solid black;
+  color: black;
+}
